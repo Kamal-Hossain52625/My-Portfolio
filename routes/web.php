@@ -19,7 +19,6 @@ Route::resource('projects', ProjectController::class);
 
 Route::get('/', [ProjectController::class, 'index']);
 
-Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
 
 Route::post('/admin/login', [AdminController::class, 'authenticate'])->name('admin.login.submit');
 
